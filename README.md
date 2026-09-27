@@ -1,4 +1,4 @@
-# python_dynamic_stack
+# python-dynamic-stack
 
 A simple, from-scratch implementation of the **Stack** data structure in Python, with **dynamic resizing** — the stack automatically grows when it runs out of space, so you never have to worry about it being "full".
 
@@ -21,7 +21,7 @@ A stack is a linear data structure that follows the **LIFO** principle (*Last In
 No dependencies needed — just Python 3. Clone the repo or copy the `stack.py` file into your project.
 
 ```bash
-git clone https://github.com/soshjant/python_dynamic_stack.git
+git clone https://github.com/soshjant/python-dynamic-stack.git
 ```
 
 ## Usage
@@ -64,7 +64,7 @@ When you `push` an item and the stack is full, instead of stopping with an error
 2. Copies all existing items into the new list.
 3. Replaces the old list with the new one.
 
-This means you can start with a small stack (or no size at all) and keep pushing items — the stack will keep growing to fit your needs, just like Python's built-in `list`.
+This means you can start with a small stack and keep pushing items — the stack will keep growing to fit your needs, just like Python's built-in `list`.
 
 ```python
 s = stack(1)   # starts tiny
@@ -77,7 +77,7 @@ print(s.size)   # 16
 
 | Method | Description |
 |---|---|
-| `stack(size)` | Creates a new stack with an initial size (default varies by version) |
+| `stack(size)` | Creates a new stack with an initial size |
 | `push(x)` | Adds `x` to the top of the stack; resizes automatically if full |
 | `pop()` | Removes and returns the top item; prints a message if empty |
 | `peak()` | Returns the top item without removing it; prints a message if empty |
